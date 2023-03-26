@@ -23,7 +23,7 @@ div#gray-background {
 
 /* First page */
 header {
-  height: 100vh;
+  height: auto;
   margin-left: 1em;
   margin-right: 1em;
   overflow: hidden;
@@ -37,14 +37,14 @@ p {
 img#icon {
   width: 60%;
   height: auto;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 img#top-left-square {
   width: 5%;
   height: auto;
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
 }
 
@@ -52,7 +52,7 @@ img#top-right-square {
   width: 5%;
   height: auto;
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
 }
 
@@ -60,18 +60,20 @@ p#intro {
   color: #CBCBCB;
   font-weight: bold;
   font-size: 3em;
-  position: relative;
   height: 40%;
   line-height: 0.7em;
   padding-top: 5%;
-  margin-top: 0;
+  margin-top: 1em;
   margin-bottom: 0;
-  z-index: 2;
 }
 
 p#side-words {
   color: black;
-  font-size: 0.7em;
+  width: 50%;
+  margin-top: 16em;
+  font-size: 0.2em;
+  background-color: #F5F5F5;
+  padding-left: 8em;
 }
 
 
