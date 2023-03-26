@@ -72,11 +72,6 @@ p#intro {
 p#side-words {
   color: black;
   font-size: 0.7em;
-  position: absolute;
-  width: 38%;
-  top: 70vh;
-  left: 5vh;
-  z-index: 3;
 }
 
 
