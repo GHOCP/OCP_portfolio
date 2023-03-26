@@ -10,13 +10,11 @@
 div#first-page {
   width: auto;
   height: auto;
-  position: relative;
   overflow: hidden;
 }
 
 div#gray-background {
   background-color: #F5F5F5;
-  position: absolute;
   right: 0;
   bottom: 0;
   width: 70%;
@@ -32,7 +30,6 @@ header {
   position: relative;
 }
 
-
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -40,7 +37,7 @@ p {
 img#icon {
   width: 60%;
   height: auto;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 img#top-left-square {
@@ -58,27 +55,6 @@ img#top-right-square {
   top: 0;
   right: 0;
 }
-
-/*
-img#side-words-background {
-  height: 43vh;
-  width: auto;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  right: -2em;
-  z-index: 1;
-}
-*/
-
-img#side-words-background {
-  margin-top: 5em;
-  position: relative;
-  top:auto;
-  right: -4em;
-  z-index: 1;
-}
-
 
 p#intro {
   color: #CBCBCB;
