@@ -60,12 +60,11 @@ p#intro {
   color: #CBCBCB;
   font-weight: bold;
   font-size: 3em;
-  height: 40%;
   line-height: 0.7em;
   padding-top: 5%;
   margin-top: 0;
 }
-
+/*
 p#side-words {
   color: black;
   width: 50%;
@@ -74,8 +73,18 @@ p#side-words {
   background-color: #F5F5F5;
   padding-left: 8em;
 }
+*/
 
-
+p#side-words {
+  color: #e3e3e3;
+  font-weight: regular;
+  font-size: 1.5em;
+  line-height: 1em;
+  padding-top: 5%;
+  margin-top: 0;
+  text-align: justify;
+  
+}
 
 
 /* =================== Second page =================== */
