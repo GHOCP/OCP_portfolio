@@ -37,7 +37,7 @@ p {
 img#icon {
   width: 60%;
   height: auto;
-  margin-top: 6em;
+  margin-top: 5em;
 }
 
 img#top-left-square {
@@ -62,19 +62,9 @@ p#intro {
   font-size: 3em;
   line-height: 0.7em;
   padding-top: 5%;
-  margin-top: 0;
+  margin-top: 0.5em;
   margin-bottom: 0em;
 }
-/*
-p#side-words {
-  color: black;
-  width: 50%;
-  margin-top: 16em;
-  font-size: 0.2em;
-  background-color: #F5F5F5;
-  padding-left: 8em;
-}
-*/
 
 p#side-words {
   color: #f3f3f3;
@@ -90,7 +80,7 @@ p#side-words {
 
 /*
 p#side-words span {
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(127, 127, 127);
 }
 */
 
@@ -100,12 +90,15 @@ p#side-words span {
 /* =================== Second page =================== */
 
 article {
-  margin-top: 6em;  
+  margin-top: 0.5em;  
 }
 
 .portfolio {
+  margin-top: 0;
   padding: 2em;
+  padding-top: 0;
   overflow: hidden;
+  background-color: black;
 }
 
 .portfolio img {
@@ -114,6 +107,7 @@ article {
 }
 
 .title {
+  color: #ffffff;
   font-weight: bold;
   margin-bottom: 0;
 }
