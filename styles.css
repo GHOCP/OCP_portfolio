@@ -90,7 +90,15 @@ p#side-words span {
 /* =================== Second page =================== */
 
 article {
-  margin-top: 0.5em;  
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;  
+}
+
+
+img.strips {
+  position: relative;
+  top: 2px;
 }
 
 .portfolio {
@@ -129,6 +137,10 @@ article {
 }
 
 .caption-2 {
+  flex: 1;
+}
+
+.caption-3 {
   flex: 1;
   text-align: right;
 }
