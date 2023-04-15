@@ -11,17 +11,17 @@ div#first-page {
   width: auto;
   height: auto;
   overflow: hidden;
-  position: relative;
 }
 
-img#logo {
-  position: absolute;
-  width: 90vw;
-  left: 0em;
-  top:  15em;
-  z-index: 2;
+div#gray-background {
+  background-color: #F5F5F5;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 20%;
 }
 
+/* First page */
 header {
   height: auto;
   margin-left: 1em;
@@ -30,35 +30,59 @@ header {
   position: relative;
 }
 
-img#background {
-  margin-top: 5em;
-}
-
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-div#words {
-  position: relative;
-  top: -10em;
-  padding: 0.5em;
+img#icon {
+  width: 60%;
+  height: auto;
+  margin-top: 5em;
+}
+
+img#top-left-square {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+img#top-right-square {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 4px;
+  right: 0;
 }
 
 p#intro {
-  color: #000000;
+  color: #CBCBCB;
   font-weight: bold;
   font-size: 3em;
-  line-height: 0.6em;
+  line-height: 0.7em;
+  padding-top: 5%;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
 }
 
 p#side-words {
-  color: #efefef;
+  color: #f3f3f3;
   font-weight: bold;
+  width: 95%;
   font-size: 1.5em;
   line-height: 1em;
+  padding-top: 5%;
+  padding: 1%;
+  margin-top: 0.5em;
   text-align: left; 
 }
 
+/*
+p#side-words span {
+  background-color: rgb(127, 127, 127);
+}
+*/
 
 
 
@@ -71,21 +95,27 @@ article {
   margin-right: 1em;  
 }
 
+
+img.strips {
+  position: relative;
+  top: 2px;
+}
+
 .portfolio {
   margin-top: 0;
   padding: 2em;
   padding-top: 0;
   overflow: hidden;
+  background-color: black;
 }
 
 .portfolio img {
   height: auto;
   width: 100%;
-  border-radius: 1em;
 }
 
 .title {
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   margin-bottom: 0;
 }
