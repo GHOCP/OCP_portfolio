@@ -1,0 +1,116 @@
+/* ######## mobile specific styles ######## */ 
+
+/* Fonts */
+@font-face { 
+  font-family: 'some_name_goes_here'; 
+  src: url('some_location_of_the_font_file'); 
+}
+
+/* =================== First page =================== */
+div#first-page {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+img#logo {
+  position: absolute;
+  width: 90vw;
+  left: 0em;
+  top:  15em;
+  z-index: 2;
+}
+
+header {
+  height: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+img#background {
+  margin-top: 5em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div#words {
+  position: relative;
+  top: -10em;
+  padding: 0.5em;
+}
+
+p#intro {
+  color: #000000;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 0.5em;
+}
+
+p#side-words {
+  color: #9B9B9B;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: left; 
+}
+
+
+
+
+
+/* =================== Second page =================== */
+
+article {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;  
+}
+
+.portfolio {
+  margin-top: 0;
+  padding: 2em;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.portfolio img {
+  height: auto;
+  width: 100%;
+  border-radius: 1em;
+}
+
+.title {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.supplement {
+  color: #CBCBCB;
+  font-size: 0.5em;
+  margin-bottom: 2em;
+}
+
+.caption {
+  color: #CBCBCB;
+  font-size: 0.5em;
+  display: flex;
+}
+
+.caption-1 {
+  flex: 1;
+}
+
+.caption-2 {
+  flex: 1;
+}
+
+.caption-3 {
+  flex: 1;
+  text-align: right;
+}
