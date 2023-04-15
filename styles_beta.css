@@ -41,7 +41,8 @@ p {
 div#words {
   position: relative;
   top: -10em;
-  padding: 0.5em;
+  padding: 0.3em;
+  text-align: left;
 }
 
 p#intro {
