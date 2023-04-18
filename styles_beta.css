@@ -12,6 +12,7 @@ div#first-page {
   height: auto;
   overflow: hidden;
   position: relative;
+  margin-bottom: -10em;
 }
 
 img#logo {
@@ -74,18 +75,19 @@ article {
 
 .portfolio {
   margin-top: 0;
-  padding: 2em;
+  padding: 1em;
   padding-top: 0;
   overflow: hidden;
 }
 
 .portfolio img {
-  height: auto;
+  height: 300px;
   width: 100%;
-  border-radius: 1em;
+  border-radius: 0em;
 }
 
 .title {
+  font-size: 0.5em;
   color: #000000;
   font-weight: bold;
   margin-bottom: 0;
