@@ -4,33 +4,43 @@
     <title>OCP's Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles_beta.css" rel="stylesheet" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
-    <div id="first-page">
-      <img src="pics/logo_beta.svg" alt="logo" id="logo">
-      <header>
-        <img src="pics/background.svg" alt="background" id="background">
-        <div id="words">
-          <p id="intro">This is the portfolio of Ou Changpei. I focus on UX design. I also love anything related to creation. </p>
-          <p id="side-words"> <span>The approaching new age needs new human beings. That should be a true humane society etched with equality, autonomy, cosmopolitanism, and freedom. For all people's future,  we must establish the unity between the understanding of humankind and diversiform self-expressions. We must be better through creation. That's the only answer. </span></p>
-        </div>        
-      </header>
-    </div>
-    <div id="second-page">
-      <article>
-        <div class="portfolio">
-          <p class="title">A Forest Park Service update</p>
-          <p class="supplement">Reshaping the service of a forest park in my hometown by redesigning the facilities and complementing them with IoT-driven features. </p>
-          <img src="pics/forest-park.jpg" alt="forest-park">
-          <div class="caption">
-            <p class="caption-1">01</p>
-            <p class="caption-2">2021 Summer</p>
-            <p class="caption-3">Individual project</p>
-          </div>
+    <div class="grid-container">
+      <div class="grid-item" id="text">
+          <div id="words" class="im-fell-dw-pica-regular">
+            <p id="name">Changpei Ou</p>
+            <p id="self-intro">User experience designer, with versatility in creating innovative products that make this world better.</p>
+          </div>        
+      </div>
+      <div class="grid-item" id="sea">
+          <img src="pics/sea.svg" alt="background picture">
+      </div>
+      <div class="grid-item" id="p1">
+        <div class="pic-background">
+
         </div>
-      </article> 
+        <div id="intro">I worked as a UX design intern in the MRO Lab of Air France & KLM E&M, partaking in several projects created by our team. Here two projects are introduced: redesign of the official website of Air France & KLM E&M, and the onboarding platform for interns.</div>
+      </div>
+      <div class="grid-item" id="p2">
+        <img src="pics/sea.svg" alt="background picture">
+     </div>
+     <div class="grid-item" id="p3">
+      <img src="pics/sea.svg" alt="background picture">
+     </div>
+     <div class="grid-item" id="p4">
+      <img src="pics/sea.svg" alt="background picture">
+     </div>
+
     </div>
+
 
     
     

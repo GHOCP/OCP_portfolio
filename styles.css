@@ -1,146 +1,40 @@
-/* ######## mobile specific styles ######## */ 
+/* ######## desktop styles ######## */ 
 
-/* Fonts */
-@font-face { 
-  font-family: 'some_name_goes_here'; 
-  src: url('some_location_of_the_font_file'); 
-}
-
-/* =================== First page =================== */
-div#first-page {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); minmax(0, 1fr);
+  background-color: #ffffff;
+  padding: 0 px;
   width: auto;
-  height: auto;
-  overflow: hidden;
 }
 
-div#gray-background {
-  background-color: #F5F5F5;
-  right: 0;
-  bottom: 0;
-  width: 70%;
-  height: 20%;
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  font-size: 30px;
 }
-
-/* First page */
-header {
-  height: auto;
-  margin-left: 1em;
-  margin-right: 1em;
-  overflow: hidden;
-  position: relative;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-img#icon {
-  width: 60%;
-  height: auto;
-  margin-top: 5em;
-}
-
-img#top-left-square {
-  width: 5%;
-  height: auto;
-  position: absolute;
-  top: 4px;
-  left: 0;
-}
-
-img#top-right-square {
-  width: 5%;
-  height: auto;
-  position: absolute;
-  top: 4px;
-  right: 0;
-}
-
-p#intro {
-  color: #CBCBCB;
-  font-weight: bold;
-  font-size: 3em;
-  line-height: 0.7em;
-  padding-top: 5%;
-  margin-top: 0.5em;
-  margin-bottom: 0em;
-}
-
-p#side-words {
-  color: #f3f3f3;
-  font-weight: bold;
-  width: 95%;
-  font-size: 1.5em;
-  line-height: 1em;
-  padding-top: 5%;
-  padding: 1%;
-  margin-top: 0.5em;
-  text-align: left; 
-}
-
-/*
-p#side-words span {
-  background-color: rgb(127, 127, 127);
-}
-*/
-
-
-
-
-/* =================== Second page =================== */
-
-article {
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;  
-}
-
-
-img.strips {
-  position: relative;
-  top: 2px;
-}
-
-.portfolio {
-  margin-top: 0;
-  padding: 2em;
-  padding-top: 0;
-  overflow: hidden;
-  background-color: black;
-}
-
-.portfolio img {
-  height: auto;
+.grid-item img {
   width: 100%;
 }
 
-.title {
-  color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 0;
+.pic-background {
+  background-color: #b2b2b2;  
+  width: 100%;
+  height: 80%;
 }
 
-.supplement {
-  color: #CBCBCB;
-  font-size: 0.5em;
-  margin-bottom: 2em;
+div#wo {
+
 }
 
-.caption {
-  color: #CBCBCB;
-  font-size: 0.5em;
-  display: flex;
+.im-fell-dw-pica-regular {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.caption-1 {
-  flex: 1;
-}
-
-.caption-2 {
-  flex: 1;
-}
-
-.caption-3 {
-  flex: 1;
-  text-align: right;
+.im-fell-dw-pica-regular-italic {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: italic;
 }
