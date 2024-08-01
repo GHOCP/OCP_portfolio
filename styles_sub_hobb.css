@@ -1,0 +1,307 @@
+/* ######## desktop styles ######## */ 
+
+/* ------- font families ------- */
+.im-fell-dw-pica-regular {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.im-fell-dw-pica-regular-italic {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt";
+}
+
+.playwrite-be-wal-font {
+    font-family: "Playwrite BE WAL", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* ------- go back to homepag------- */
+
+/*
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 1vw;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+}
+*/
+
+#homepage {
+    margin-bottom: 1vw;
+}
+
+
+/* ------- intro ------- */
+
+body {
+    padding: 16px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    background-image: url("pics/Hobb/background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    width: 100%;
+    height: 50vw;
+}
+
+#intro_img {
+    position: absolute;
+    bottom: -32px;
+    left: 30vw;
+    animation: fadeInAnimation 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    animation-iteration-count: 1;
+    -webkit-animation: fadeInAnimation 1.5s;
+    -webkit-animation-iteration-count: 1;
+    position: relative;
+    width: 100%;
+}
+
+#intro_img img {
+    width: 35vw;
+    height: auto;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        bottom: -128px;
+    }
+    to {
+        opacity: 1;
+        bottom: -32px;
+    }
+}
+
+@-webkit-keyframes fadeInAnimation /* Safari and Chrome */ {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#intro_text {
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    width: 15%;
+    align-self: center;
+    font-family: "Inter", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 8px;
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+#subtitle {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#separator {
+    background-color: black;
+    height: 8px;
+    width: 100%;
+}
+
+#team {
+    margin-top: 2vw;
+    color: #B3B3B3;
+}
+
+#team ul {
+    padding-left: 16px;
+}
+
+
+
+/* ------- research ------- */
+
+#research {
+    background-color: #F0F0F0;
+    padding-bottom: 48px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    margin-top: 16px;
+}
+
+.section-title {
+    color: black;
+    text-align: center;
+    font-family: "Inter", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;   
+    padding: 128px 64px 64px 48px; 
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 35%;
+}
+
+.img-container {
+    padding-left: 64px;
+    padding-right: 64px;
+    display: grid;
+    place-items: center;
+}
+
+.img-container img {
+    width: 100%;
+    margin-bottom: 64px;
+}    
+
+.hidden {
+    opacity: 0;
+    position: relative;
+    top: 20px;
+    transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.in-view {
+    top: 10px;
+    opacity: 1;
+}
+
+
+/* ------- prototyping ------- */
+
+#prototype-1 {
+    width: 70%;
+}
+
+#smile_icon {
+    width: 10vw;
+    height: auto;
+    position: relative;
+    left: 22vw;
+    top: -12vw
+}
+
+/* ------- usage ------- */
+
+#usage {
+    padding: 64px;
+    padding-top: 0px;
+}
+
+#three_modes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.mode-header {
+    font-family: "Inter", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 8px;
+    padding: 24px 32px 24px 32px;
+    height: 6vw;
+    background-color: #D8D0E0;
+}
+
+.mode-title {
+    font-weight: 400;
+}
+
+.mode-picture {
+    background-color: #F0F0F0;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0px 0.5px 0.5px 0.5px; 
+    margin-top: 0px;
+    height: 30vw;
+}
+
+.mode-picture img{
+    width: 90%;
+}
+
+.mode-picture img[src="pics/board_game/mode-3.png"] {
+    width: 70%;
+}
+
+/* ------- usage ------- */
+
+#storyboard {
+    background-color: #F0F0F0;
+}
+
+
+/* ------- go to next ------- */
+
+#last_next_project {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    display: grid;
+    place-items: center;
+}
+#last_next_project span {
+    display: inline-block;
+}
+
+
+#last_project{
+    margin-right: 5vw;
+}
+
+
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+#next {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 1vw;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+#next:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+}
