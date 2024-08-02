@@ -8,53 +8,63 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@100..900&family=Playwrite+BE+WAL:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link href="styles_sub_rememory.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+
     <div id="homepage">
         <span>
             <span>&#x2039;</span>
-            <a href="index.html"><span id="next">Homepage</span></a>
+            <a href="index.html"><span class="link libre-franklin-200-10px-normal" >Homepage</span></a>
         </span>
-        <!--
-        <span>&#x2039;</span><button id="back" onclick="history.back()">Homepage</button>
-        -->
     </div>
-    <div class="grid-container">
+
+    <div id="teaser">
         <div class="grid-item" id="intro_img">
             <img src="pics/board_game21.webp" alt="3D picture">
         </div>
-        <div class="grid-item" id="intro_text" >
-            <p id="title">Re-Memory</p>
-            <p id="subtitle">Product Designed for People with Dementia</p>
-            <div id="separator"></div>
-            <p id="explanation">This is a group project for the design challenge from the “User Experience Design” course, collaborating with a local nursing house for seniors (KBO). We delved into creating “Warm Technology”, which pivots around making the lives of people suffering from dementia better. Initiated from the problem statement based on previous research, a prototype of the proposed game was created (2022 Fall).</p>
-            <div id="team">
-                <ul>
-                    <li>Changpei Ou(me): Project manager | Mind maps | Brainstorming director | Prototyping (physical and 3D models)</li>
-                    <li>Milo Simons: Game-play design | Scenario | COCD analysis</li>
-                    <li>Jasmijn de Joode: Mind maps | Affinity diagram | Testing</li>
-                    <li>Bram Hoesdemakers: Observation | Interview</li>
-                    <li>Xuhui Wang: Prototyping</li>
-                </ul>
-                <P>* Other activities, such as brainstorming, literature collecting, and qualitative data analysis were executed collectively.</P>
-            </div>
+    </div>
+
+    <div id="intro_text">    
+        <div id="title">
+            <p class="libre-franklin-600-normal hidden"> Re-Memory: Product Design for People with Dementia</p>
+        </div>
+        <!--
+        <div id="subtitle">
+        <p>Product Designed for People with Dementia</p>
+        </div>
+        -->
+
+        <div id="explanation"> 
+            <p class="libre-franklin-200-10px-normal">This is a group project for the design challenge from the “User Experience Design” course, collaborating with a local nursing house for seniors (KBO). We explored and created “Warm Technology”, which pivots around making the lives of people suffering from dementia better. Initiated from the problem statement based on results of previous research, a prototype of the proposed game was created.</p>
+        </div>
+        <div id="team">
+            <ul class="libre-franklin-200-10px-normal">
+                <li>Changpei Ou(me): Project manager | Mind maps | Brainstorming director | Prototyping (physical and 3D models)</li>
+                <li>Milo Simons: Game-play design | Scenario | COCD analysis</li>
+                <li>Jasmijn de Joode: Mind maps | Affinity diagram | Testing</li>
+                <li>Bram Hoesdemakers: Observation | Interview</li>
+                <li>Xuhui Wang: Prototyping</li>
+            </ul>
+            <p class="libre-franklin-200-10px-normal">* Other activities, such as brainstorming, literature collecting, and qualitative data analysis were executed collectively.</p>
         </div>
     </div>
+
     <div id="research">
         <section>
-            <p class="section-title"> &#9312; ~ &#9316; </br> Multiple research methods were incorporated into a double diamond model</p>
+            <p class="section-title libre-franklin-200-10px-normal"> &#9312; ~ &#9316; </br> Multiple research methods were incorporated into a double diamond model</p>
         </section> 
         <div class="img-container">
             <img src="pics/board_game/Project_1 - 2 - 16_9.png" alt="research-pic-1" class="hidden">
             <img src="pics/board_game/Project_1 - 3 - 23.867_9.png" alt="research-pic-2" class="hidden">
         </div>
     </div>
+
     <div id="prototyping">
         <section>
-            <p class="section-title">&#9317;  Emotional Design: </br> “Re-memory” features a design that evokes users' emotions, “leading to a positive user experience” (Don Norman: “Emotional Design”; IxDF)</p>
+            <p class="section-title libre-franklin-200-10px-normal">&#9317;  Emotional Design: </br> “Re-memory” features a design that evokes users' emotions, “leading to a positive user experience” (Don Norman: “Emotional Design”; IxDF)</p>
         </section>
         <div class="img-container">
             <img src="pics/board_game/board_game19.webp" alt="prototyping-pic-1" id="prototype-1" class="hidden">
@@ -65,12 +75,12 @@
 
     <div id="usage">
         <section>
-            <p class="section-title">&#9318; Adaptive Design: </br> Three playing modes for people with demantia in different stages </p>
+            <p class="section-title libre-franklin-200-10px-normal">&#9318; Adaptive Design: </br> Three playing modes for people with demantia in different stages </p>
         </section>
         <div id="three_modes">
             <div class="playing-mode">
                 <div>
-                    <section class="mode-header">
+                    <section class="mode-header libre-franklin-200-10px-normal">
                         <p class="mode-title">1. Battle mode (PwD in early/middle stage)</p>
                         <p class="mode-intro">The hinge structure of the board enables a physical connection with another board, This allows two players to play against each other by flipping card sets on their respective board, which is a bit more challenging but adds to the gamification. Besides, by enlarging the number of cards, this mode underlines our notion of “sharing the memories”.</p>
                     </section>
@@ -81,7 +91,7 @@
             </div>
             <div class="playing-mode">
                 <div>
-                    <section class="mode-header">
+                    <section class="mode-header libre-franklin-200-10px-normal">
                         <p class="mode-title">2. Normal mode (PwD in middle stage) </p>
                         <p class="mode-intro">Using one board, this mode allows the PwD to play the game with caregivers/family members, who will lead the PwD to press the button to look at the hidden cards and touch the fabric on the wheel that corresponds to the content of the exposed card. Once a match is found, the retro TV display which is connected to the board through Bluetooth will play the corresponding video clip.</p>
                     </section>
@@ -92,7 +102,7 @@
             </div>
             <div class="playing-mode">
                 <div>
-                    <section class="mode-header">
+                    <section class="mode-header libre-franklin-200-10px-normal">
                         <p class="mode-title">3. Leisure mode (PwD in late stage)</p>
                         <p class="mode-intro">This mode simulates a normal activity: “card inserting”, which is common in various daily situations such as retrieving money in the ATM, entering/exiting a parking lot, and so on. Easily understandable, the “insert and play the video” gaming circle serves as a process of “simply enjoying wonderful moments in life” and/or “weaving pieces of memories together”.</p>
                     </section>
@@ -106,21 +116,21 @@
 
     <div id="storyboard">
         <section>
-            <p class="section-title">&#9319; Storyboard: </br> How  PwD in different stages play the game
+            <p class="section-title libre-franklin-200-10px-normal">&#9319; Storyboard: </br> How  PwD in different stages play the game
         </section>
         <div class="img-container">
             <img src="pics/board_game/Project_1 - 5 - 16_9.png" alt="research-pic-1" class="hidden">
         </div>
     </div>
 
-    <div id="last_next_project">
+    <div id="last_next_project" class="libre-franklin-200-10px-normal">
         <div>
             <span id="last_project">
                 <span>&#x2039;</span>
-                <a href="hobb.html"><span id="next">Last: "Hobb!"</span></a>
+                <a href="hobb.html"><span id="next" class="link">Last: "Hobb!"</span></a>
             </span>
             <span id="next_project">
-                <a href="klmeam.html"><span id="next">Next: Two projects in KLM</span></a>
+                <a href="klmeam.html"><span id="next" class="link">Next: Two projects in KLM</span></a>
                 <span>&#x203A;</span>
             </span>
         </div>

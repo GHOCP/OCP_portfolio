@@ -14,6 +14,7 @@
   font-style: italic;
 }
 
+/* <weight>: Use a value from 100 to 400 */
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -22,8 +23,10 @@
   font-variation-settings: "slnt";
 }
 
-.playwrite-be-wal-font {
-  font-family: "Playwrite BE WAL", cursive;
+
+/* <weight>: Use a value from 100 to 900 */
+.libre-franklin-font {
+  font-family: "Libre Franklin", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -33,6 +36,7 @@
   font-family: Weimar;
   src: url(Fonts/weimar-webfontkit/weimar.regular-webfont.woff);
 }
+
 
 
 /* ------- font family ------- */
@@ -133,10 +137,11 @@
 }
 
 .grid-item .intro {
-  font-size: 10px;
+  font-size: 8px;
   margin-top: 8px;
   margin-bottom: 16px;
-  font-family: "IM Fell DW Pica", serif;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }

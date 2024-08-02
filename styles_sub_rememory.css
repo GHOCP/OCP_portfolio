@@ -1,6 +1,9 @@
 /* ######## desktop styles ######## */ 
 
-/* ------- font families ------- */
+
+
+/* ------- font family ------- */
+
 .im-fell-dw-pica-regular {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 400;
@@ -12,7 +15,8 @@
     font-weight: 400;
     font-style: italic;
 }
-
+  
+/* <weight>: Use a value from 100 to 400 */
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -21,52 +25,119 @@
     font-variation-settings: "slnt";
 }
 
-.playwrite-be-wal-font {
-    font-family: "Playwrite BE WAL", cursive;
+
+/* <weight>: Use a value from 100 to 900 */
+.libre-franklin-200-10px-normal {
+    font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-
-/* ------- go back to homepage------- */
-
-/*
-button {
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    margin-bottom: 1vw;
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 10px;
+    font-weight: 200;
+    font-style: normal;
 }
 
-button:hover {
-    cursor: pointer;
-    text-decoration: underline; 
-}
-*/
-
-#homepage {
-    margin-bottom: 1vw;
+.libre-franklin-600-normal {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
-/* ------- intro ------- */
+
+/* ------- effect ------- */
+
+.hidden {
+    opacity: 0;
+    position: relative;
+    top: 20px;
+    transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.in-view {
+    top: 0px;
+    opacity: 1;
+}
+
+
+
+/* ------- body ------- */
 
 body {
     padding: 16px;
 }
 
+
+
+/* ------- go back to homepage ------- */
+
+#homepage {
+    margin-bottom: 1vw;
+}
+
+.link {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+}
+    
+
+
+/* ------- teaser ------- */
+
+#teaser {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding: 10vw 10vw 0 10vw;
+}
+
+#intro_img {
+    align-self: center;
+    padding-right: -200px;
+    animation: fadeInAnimation 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    animation-iteration-count: 1;
+    -webkit-animation: fadeInAnimation 1.5s;
+    -webkit-animation-iteration-count: 1;
+    position: relative;
+}
+
+#intro_img img {
+    width: 50vw;
+    height: auto;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        top: 20px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes fadeInAnimation {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*
 .grid-container {
     display: grid;
     column-gap: 4px;
     grid-template-columns: 1.8fr 1fr;
-    background-color: #E4E4E4;
+    background-color: white;
     padding: 0px;
     width: 100%;
     height: 90vh;
@@ -98,7 +169,7 @@ body {
     }
 }
 
-@-webkit-keyframes fadeInAnimation /* Safari and Chrome */ {
+@-webkit-keyframes fadeInAnimation {
     from { 
         opacity: 0;
     }
@@ -106,41 +177,72 @@ body {
         opacity: 1;
     }
 }
+*/
+
+
+
+/* ------- intro text ------- */
 
 #intro_text {
-    width: 50%;
-    align-self: center;
-    font-family: "Inter", serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 8px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding: 0 20vw 0 20vw;
+    min-height: 60vh;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
 }
 
 #title {
-    font-size: 24px;
-    margin-bottom: 0px;
+    font-size: 64px;
+    text-align: center;
 }
 
+#title p {
+    margin-bottom: 0;
+}
+
+/*
 #subtitle {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 400;
     font-style: italic;
+    font-size: 10px;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    align-self: end;
+    padding-bottom: 16px;
 }
 
-#separator {
-    background-color: black;
-    height: 8px;
-    width: 100%;
+#subtitle p {
+    text-decoration-line: underline;
+    text-decoration-thickness: 8px;
+    text-underline-offset: 8px
+}
+*/
+
+#explanation {
+    margin-top: 1vh;
+    text-align: center;
+    width: 50%;
 }
 
 #team {
-    margin-top: 2vw;
+    width: 40%;
+    border: 1px solid #D9D9D9;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+#team ul{
+    padding-left: 16px;
     color: #B3B3B3;
 }
 
-#team ul {
-    padding-left: 16px;
+#team p {
+    color: #B3B3B3;
 }
+
 
 
 
@@ -148,7 +250,7 @@ body {
 
 #research {
     background-color: #F0F0F0;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 section {
@@ -160,14 +262,11 @@ section {
 .section-title {
     color: black;
     text-align: center;
-    font-family: "Inter", serif;
-    font-weight: 200;
-    font-style: normal;
     font-size: 24px;   
     padding: 128px 64px 64px 48px; 
     margin-top: 8px;
     margin-bottom: 0px;
-    width: 35%;
+    width: 30%;
 }
 
 .img-container {
@@ -182,17 +281,6 @@ section {
     margin-bottom: 64px;
 }    
 
-.hidden {
-    opacity: 0;
-    position: relative;
-    top: 20px;
-    transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.in-view {
-    top: 10px;
-    opacity: 1;
-}
 
 
 /* ------- prototyping ------- */
@@ -209,6 +297,8 @@ section {
     top: -12vw
 }
 
+
+
 /* ------- usage ------- */
 
 #usage {
@@ -223,9 +313,6 @@ section {
 }
 
 .mode-header {
-    font-family: "Inter", serif;
-    font-weight: 200;
-    font-style: normal;
     font-size: 8px;
     padding: 24px 32px 24px 32px;
     height: 6vw;
@@ -233,14 +320,16 @@ section {
 }
 
 .mode-title {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .mode-picture {
     background-color: #F0F0F0;
+    /*
     border-color: #CCCCCC;
     border-style: solid;
     border-width: 0px 0.5px 0.5px 0.5px; 
+    */
     margin-top: 0px;
     height: 30vw;
 }
@@ -272,30 +361,11 @@ section {
     display: inline-block;
 }
 
-
 #last_project{
     margin-right: 5vw;
 }
 
-
 a {
     text-decoration: none; 
     color: black;
-}
-
-#next {
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    margin-bottom: 1vw;
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10px;
-}
-
-#next:hover {
-    cursor: pointer;
-    text-decoration: underline; 
 }
