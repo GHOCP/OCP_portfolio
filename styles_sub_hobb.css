@@ -66,6 +66,47 @@ body {
     padding: 16px;
 }
 
+.black-background {
+    background-color: black;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.top-bottom-padding-64px {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.top-bottom-padding-128px {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.section-title {
+    color: white;
+    text-align: center;
+    font-size: 24px;   
+    padding: 128px 64px 64px 48px; 
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 30%;
+    line-height: 1.5;
+}
+
+.section-title-black {
+    color: black;
+    text-align: center;
+    font-size: 24px;   
+    padding: 128px 64px 64px 48px; 
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 30%;
+    line-height: 1.5;
+}
+
+
 
 
 /* ------- go back to homepage ------- */
@@ -184,6 +225,7 @@ body {
     margin-top: 1vh;
     text-align: center;
     width: 50%;
+    line-height: 1.5;
 }
 
 #team {
@@ -204,29 +246,19 @@ body {
 
 
 
-
 /* ------- research ------- */
 
 #research {
     background-color: #2D687B;
     margin-bottom: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 128px;
 }
 
 section {
     display: grid;
     place-items: center;
+    align-items: start;
     margin-top: 16px;
-}
-
-.section-title {
-    color: white;
-    text-align: center;
-    font-size: 24px;   
-    padding: 128px 64px 64px 48px; 
-    margin-top: 8px;
-    margin-bottom: 0px;
-    width: 30%;
 }
 
 .second-section-title {
@@ -254,14 +286,41 @@ section {
     width: 50%;
 }
 
+.twin {
+    width: 100%;
+}
+
+.double-in-one-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-container-small {
+    display: grid;
+    place-items: center;
+}
+
+.img-container-small img{
+    padding: 0;
+}
 
 
 
+/* ------- wire-framing ------- */
 
+#low_proto {
+    width: 70%;
+}
 
-/* ------- prototyping ------- */
+#mid_proto_background {
+    margin-top: 10vh;
+    background-color: #2D687B;
+    display: grid;
+    place-items: center;
+}
 
-#prototype-1 {
+#mid_proto {
+    padding: 10vh 0 10vh 0;
     width: 70%;
 }
 
@@ -275,54 +334,20 @@ section {
 
 
 
-/* ------- usage ------- */
+/* ------- service_blueprint ------- */
 
-#usage {
-    padding: 64px;
-    padding-top: 0px;
-}
 
-#three_modes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
-}
 
-.mode-header {
-    font-size: 8px;
-    padding: 24px 32px 24px 32px;
-    height: 6vw;
-    background-color: #D8D0E0;
-}
 
-.mode-title {
-    font-weight: 600;
-}
 
-.mode-picture {
-    background-color: #F0F0F0;
-    /*
-    border-color: #CCCCCC;
-    border-style: solid;
-    border-width: 0px 0.5px 0.5px 0.5px; 
-    */
-    margin-top: 0px;
-    height: 30vw;
-}
+/* ------- ui_library ------- */
 
-.mode-picture img{
-    width: 90%;
-}
 
-.mode-picture img[src="pics/board_game/mode-3.png"] {
-    width: 70%;
-}
 
-/* ------- usage ------- */
 
-#storyboard {
-    background-color: #F0F0F0;
-}
+
+
+
 
 
 /* ------- go to next ------- */
@@ -333,6 +358,7 @@ section {
     display: grid;
     place-items: center;
 }
+
 #last_next_project span {
     display: inline-block;
 }

@@ -225,6 +225,7 @@ body {
     margin-top: 1vh;
     text-align: center;
     width: 50%;
+    line-height: 1.5;
 }
 
 #team {
@@ -323,6 +324,10 @@ section {
     font-weight: 600;
 }
 
+.mode-intro {
+    line-height: 1.5;
+}
+
 .mode-picture {
     background-color: #F0F0F0;
     /*
@@ -342,7 +347,9 @@ section {
     width: 70%;
 }
 
-/* ------- usage ------- */
+
+
+/* ------- storyboard ------- */
 
 #storyboard {
     background-color: #F0F0F0;
