@@ -66,6 +66,16 @@ body {
     padding: 16px;
 }
 
+.img-container-white {
+    background-color: white;
+}
+
+.img-container {
+    padding-left: 64px;
+    padding-right: 64px;
+    display: grid;
+    place-items: center;
+}
 
 
 /* ------- go back to homepage ------- */
@@ -94,10 +104,13 @@ body {
     display: grid;
     place-items: center;
     align-content: center;
-    padding: 10vw 10vw 0 10vw;
+    padding: 20vw 10vw 0 10vw;
+    max-height: 90vh;
 }
 
 #intro_img {
+    display: grid;
+    place-items: center;
     align-self: center;
     padding-right: -200px;
     animation: fadeInAnimation 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -105,6 +118,15 @@ body {
     -webkit-animation: fadeInAnimation 1.5s;
     -webkit-animation-iteration-count: 1;
     position: relative;
+}
+
+#threeD-pic {
+    position: absolute;
+}
+
+#olds {
+    position: relative;
+    bottom: 90%;
 }
 
 #intro_img img {
@@ -132,52 +154,6 @@ body {
     }
 }
 
-/*
-.grid-container {
-    display: grid;
-    column-gap: 4px;
-    grid-template-columns: 1.8fr 1fr;
-    background-color: white;
-    padding: 0px;
-    width: 100%;
-    height: 90vh;
-}
-
-#intro_img {
-    align-self: center;
-    padding-right: -200px;
-    animation: fadeInAnimation 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-    animation-iteration-count: 1;
-    -webkit-animation: fadeInAnimation 1.5s;
-    -webkit-animation-iteration-count: 1;
-    position: relative;
-}
-
-#intro_img img {
-    width: 55vw;
-    height: auto;
-}
-
-@keyframes fadeInAnimation {
-    from {
-        opacity: 0;
-        top: 20px;
-    }
-    to {
-        opacity: 1;
-        top: 0px;
-    }
-}
-
-@-webkit-keyframes fadeInAnimation {
-    from { 
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
 
 
 
@@ -189,7 +165,7 @@ body {
     align-content: center;
     padding: 0 20vw 0 20vw;
     min-height: 60vh;
-    margin-top: 20vh;
+    margin-top: 0;
     margin-bottom: 30vh;
 }
 
@@ -201,25 +177,6 @@ body {
 #title p {
     margin-bottom: 0;
 }
-
-/*
-#subtitle {
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 10px;
-    grid-column-start: 10;
-    grid-column-end: 12;
-    align-self: end;
-    padding-bottom: 16px;
-}
-
-#subtitle p {
-    text-decoration-line: underline;
-    text-decoration-thickness: 8px;
-    text-underline-offset: 8px
-}
-*/
 
 #explanation {
     margin-top: 1vh;
@@ -250,14 +207,13 @@ body {
 /* ------- research ------- */
 
 #research {
-    background-color: #F0F0F0;
-    margin-bottom: 48px;
+
 }
 
 section {
     display: grid;
     place-items: center;
-    margin-top: 16px;
+    margin-bottom: 5vh;
 }
 
 .section-title {
@@ -270,24 +226,17 @@ section {
     width: 30%;
 }
 
-.img-container {
-    padding-left: 64px;
-    padding-right: 64px;
-    display: grid;
-    place-items: center;
-}
-
 .img-container img {
-    width: 100%;
-    margin-bottom: 64px;
-}    
+    width: 90%;
+    margin-bottom: 10vh;
+}  
 
 
 
 /* ------- prototyping ------- */
 
 #prototype-1 {
-    width: 70%;
+    width: 60%;
 }
 
 #smile_icon {
@@ -302,6 +251,7 @@ section {
 
 /* ------- usage ------- */
 
+/*
 #usage {
     padding: 64px;
     padding-top: 0px;
@@ -330,11 +280,6 @@ section {
 
 .mode-picture {
     background-color: #F0F0F0;
-    /*
-    border-color: #CCCCCC;
-    border-style: solid;
-    border-width: 0px 0.5px 0.5px 0.5px; 
-    */
     margin-top: 0px;
     height: 30vw;
 }
@@ -346,14 +291,16 @@ section {
 .mode-picture img[src="pics/board_game/mode-3.png"] {
     width: 70%;
 }
+*/
+
+
 
 
 
 /* ------- storyboard ------- */
 
-#storyboard {
-    background-color: #F0F0F0;
-}
+
+
 
 
 /* ------- go to next ------- */
